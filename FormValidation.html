@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+</head>
+
+<body>
+<form name="myForm">
+Name:
+<input type="text" name="inputName" id="inputName" /><br>
+Email:
+<input type="Email" name="inputEmail" id="inputEmail" /><br>
+Gender:
+<input type="radio" name="gender" Value="Male" Checked/>Male<input type="radio" name="gender" Value="Female" />Female<br>
+Hobby:
+<input type="Checkbox" name="hobby" value="Swimming"/>Swimming<input type="Checkbox" name="hobby" Value="Reading" checked/>Reading<br>
+<button type="button" value="submit" onClick="validForm()">Submit</button>
+</form>
+<script>
+function validForm(){
+var Name = document.myForm.inputName.value;
+var Email = document.myForm.inputEmail.value;
+var Gender = document.myForm.gender.value;
+var Hobby = document.myForm.hobby.value;
+	
+	if (inputName === "") {
+	alert("Please input name")
+	 return;
+	}
+	
+	if (inputEmail === "" ) {
+	alert("Please input valid Email")
+	 return;
+	}
+	if (gender === "") {
+	alert("Please input gender")
+	 return;
+	}
+	if (hobby === "") {
+	alert("Please input hobby")
+	 return;
+	}
+
+
+var thatWindow = window.open("", "Form Validation", "width=600,height=800");
+thatWindow.document.write("<p>Name: "+ inputName+"</p>");
+thatWindow.document.write("<p>Email: "+ inputEmail+"</p>");
+thatWindow.document.write("<p>Gender: "+ gender+"</p>");
+thatWindow.document.write("<p>Hobby: "+ hobby+"</p>");
+
+}
+
+</script>
+
+</body>
+</html>

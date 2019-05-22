@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package practise02;
 
 import java.util.Scanner;
 
-/**
- *
- * @author User
- */
+
 public class ArrayMaxMin {
 
     public static void main(String[] args) {
@@ -31,8 +24,7 @@ public class ArrayMaxMin {
                 min = number[i];
             }
         }
-        System.out.println("max is = " + max);
-        System.out.println("min is = " + min);
+        System.out.println("Maximum " + max + "Minimum" + min);
     }
 
 }
